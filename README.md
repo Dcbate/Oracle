@@ -146,4 +146,138 @@ Avoid adding the following **code smells** to the codebase. If you encounter any
 
 We aim for **100% unit test coverage** on all code going to production. Use **JUnit 5** and **Mockito** for unit tests.
 
-- A unit test should
+- A unit test should only test a single class. **Mock everything else.**
+- **Unit tests are not for finding integration defects.**
+- Test methods should naturally follow class design—if methods are small and maintainable, testing becomes easy.
+
+### Further Points on Unit Tests
+
+- Check your code coverage before you raise a PR. Use IntelliJ's code coverage tool to make this easy.
+- Aim for 100% line coverage.
+- Make your test methods short (< 10 lines) and with a single purpose.
+- Make tests fast.
+- Make use of the `verify` and `when` methods in Mockito.
+- Unit tests should be in the corresponding package name for their classes.
+- Name tests clearly and consistently.
+- Create tests that target error cases.
+- Keep them simple.
+
+---
+
+## Rest Controllers
+
+### What do they do?
+
+- Listen to HTTP requests.
+- Deserialize the input from the incoming request.
+- Validate the input.
+- Call into the business logic (e.g., service class).
+- Serialize the output of the business logic.
+- Return response body and HTTP status.
+
+### How should they do it?
+
+- They should be simple and not contain logic.
+- Make use of annotations.
+- Swagger is important, treat it like production code.
+- Use the `ResponseEntity` class to return a response.
+- Make use of the `RestExceptions` classes in the `http-toolkit` library module.
+
+---
+
+## Service Classes
+
+### What do they do?
+
+- Encapsulate business logic.
+- Usually called by the controller layer.
+- Usually call the repository layer to retrieve data.
+
+### How should they do it?
+
+- They should never talk directly to the database.
+- Make use of annotations.
+- Should return the entity model.
+- Always implement an interface.
+- Use the contract with the interface to expose only certain methods.
+- The transactional behavior of a request is set up here.
+
+---
+
+## Repository Layer
+
+### What do they do?
+
+- Manage all Java data access logic.
+- Abstract the details of data storage and retrieval from the rest of the application.
+- It is the only place we can talk to the database.
+
+### How should they do it?
+
+- Extending `JpaRepository` gives us several useful CRUD methods.
+- Use the `@Query` annotation to write SQL directly.
+- Take advantage of query lookup strategies.
+
+---
+
+## Rest API Standards
+
+### Introduction
+
+The standard has been introduced after many services were already delivered and running in production. Conformity may be lacking, but developers are expected to bring APIs in line with these standards when making changes.
+
+### General Standards
+
+All APIs must observe the following standards:
+
+- Any resource provided by an API must have a unique enterprise identifier in the form of a URI.
+- Input and output comply with the **ISO8601** standard.
+- APIs must accept timestamps in any valid time zone under the **ISO8601** standard.
+- The request and response bodies are in **JSON** format.
+- Use **nouns** instead of verbs in endpoint paths.
+- Handle errors gracefully and return standard error codes with user-friendly error messages.
+- Do not couple your APIs to UI logic.
+- Avoid throwing **500** responses to users.
+- Do not expose database **ID keys** to clients.
+
+---
+
+### HTTP Response Codes for GET Requests
+
+| HTTP Response | Condition                         | Response Body Content                |
+|---------------|-----------------------------------|--------------------------------------|
+| 200 OK        | Found resource in database        | The resource with the unique URI     |
+| 404 Not Found | Cannot find resource in database  | Error reason                         |
+
+### HTTP Response Codes for POST Requests
+
+| HTTP Response   | Condition                                               | Response Body Content                        |
+|-----------------|---------------------------------------------------------|----------------------------------------------|
+| 200 OK          | POST of existing resource, all attributes match         | Resource payload                             |
+| 201 Created     | POST of new resource, identifier does not match         | Resource payload                             |
+| 400 Bad Request | Invalid data in the request                             | Error reason                                 |
+| 404 Not Found   | POST of a new resource that references a missing parent | Error reason                                 |
+| 409 Conflict    | POST of existing resource with mismatched attributes     | Error reason                                 |
+
+---
+
+## IntelliJ
+
+IntelliJ is a powerful tool—use it!
+
+### Plugins
+
+- **SonarLint**: Helps catch issues by analyzing your code for bugs, vulnerabilities, and code smells in real-time.
+- **Problems Tab & Inspection Lines Plugin**: Highlights potential problems in the code directly within the editor, such as unused imports or parameters, making it easier to address issues before code review.
+- **Rainbow Brackets**: Enhances readability by color-coding matching brackets, parentheses, and braces, which helps in understanding the structure of the code.
+- **Pojo to JSON**: Generates a JSON representation from POJOs with random values, facilitating testing with tools like Postman.
+
+### Pre-Commit Checks
+
+Use Git to set pre-commit checks. Select checks that align with your coding standards, such as:
+
+- Code formatting
+- Linting rules
+- Running unit tests
+- Checking for code coverage
+- Ensuring no sensitive information is committed
