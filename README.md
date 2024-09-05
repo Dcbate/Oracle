@@ -248,7 +248,7 @@ The primary data representation. The JSON response must return a unique URI for 
 ### A Collection
 This refers to a group of resources, e.g., `applications`.
 
-## <span style="color:#2ecc71;">📥 GET</span>
+## <span style="color:#2ecc71;">:leftwards_arrow_with_hook: GET</span>
 
 GET is used to retrieve data from a resource. The GET request is made to the singular or plural endpoint of the resource type depending on whether a specific resource or a collection of resources is being requested.
 
