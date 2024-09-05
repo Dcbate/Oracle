@@ -220,44 +220,94 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 
 ---
 
-## Rest API Standards
+# Rest API Standards
 
-### Introduction
+## Introduction
+The standard, however, has been introduced after a large number of services have already been delivered and running in the production environment, and as such, conformity to it is lacking. It is expected that where developers need to make changes to an API, they will bring it in line with these standards. Please consider the users of the APIs and if your changes are breaking changes. If they are breaking changes, make sure all necessary dependencies are updated accordingly.
 
-The standard has been introduced after many services were already delivered and running in production. Conformity may be lacking, but developers are expected to bring APIs in line with these standards when making changes.
-
-### General Standards
-
+## General Standards
 All APIs must observe the following standards:
+- Any resource provided by an API must have an enterprise unique identifier in the form of a URI.
+- Input to or output from the API must comply with ISO8601 standard.
+- The APIs must be able to accept timestamps in any valid time zone under the ISO8601 standard. The API is responsible for converting this to any internal reference timezone.
+- The request and response bodies must be in JSON format.
+- Use nouns instead of verbs in endpoint paths.
+- Handle errors gracefully and return standard error codes with user-friendly errors that the UI can display.
+- Before creating an API, understand the reasons for creating it and the clients that will be using it.
+- Do not couple your APIs to UI logic. For example, just because the UI does data validation, does not mean the API should be doing the same. The UI is subject to change, and they should not be coupled together.
+- Avoid returning a 500 response to users.
+- Do not expose database ID keys to clients.
 
-- Any resource provided by an API must have a unique enterprise identifier in the form of a URI.
-- Input and output comply with the **ISO8601** standard.
-- APIs must accept timestamps in any valid time zone under the **ISO8601** standard.
-- The request and response bodies are in **JSON** format.
-- Use **nouns** instead of verbs in endpoint paths.
-- Handle errors gracefully and return standard error codes with user-friendly error messages.
-- Do not couple your APIs to UI logic.
-- Avoid throwing **500** responses to users.
-- Do not expose database **ID keys** to clients.
+### A Resource
+The primary data representation. The JSON response must return a unique URI for that resource, e.g., `application` or `businessarea`.
 
----
+### A Collection
+This refers to a group of resources, e.g., `applications`.
 
-### HTTP Response Codes for GET Requests
+## Required HTTP Response Codes for a GET Request
 
-| HTTP Response | Condition                         | Response Body Content                |
-|---------------|-----------------------------------|--------------------------------------|
-| 200 OK        | Found resource in database        | The resource with the unique URI     |
-| 404 Not Found | Cannot find resource in database  | Error reason                         |
+| HTTP Response | Condition                              | Response Body Content                         |
+|---------------|----------------------------------------|----------------------------------------------|
+| 200 OK        | Found resource in database             | The Resource with the unique URI             |
+| 404 Not Found | Cannot find resource in the database   | Error reason                                 |
 
-### HTTP Response Codes for POST Requests
+### A GET ALL on a Collection
 
-| HTTP Response   | Condition                                               | Response Body Content                        |
-|-----------------|---------------------------------------------------------|----------------------------------------------|
-| 200 OK          | POST of existing resource, all attributes match         | Resource payload                             |
-| 201 Created     | POST of new resource, identifier does not match         | Resource payload                             |
-| 400 Bad Request | Invalid data in the request                             | Error reason                                 |
-| 404 Not Found   | POST of a new resource that references a missing parent | Error reason                                 |
-| 409 Conflict    | POST of existing resource with mismatched attributes     | Error reason                                 |
+| HTTP Response | Condition                              | Response Body Content                         |
+|---------------|----------------------------------------|----------------------------------------------|
+| 200 OK        | Found or not found resources in database | All found resources even if the collection is empty |
+
+## POST
+
+The POST verb is used for the creation of a new resource where the client cannot form the resource identifier (URI). The POST is to the singular endpoint of the resource type, and the request body should contain all mandatory fields to create a resource.
+
+### Required HTTP Response Codes for a POST Request
+
+| HTTP Response | Condition                                                  | Response Body Content                                             |
+|---------------|------------------------------------------------------------|------------------------------------------------------------------|
+| 200 OK        | POST of existing resource (identifier matches) and all attributes match | Resource payload as returned by performing a GET request on the resource’s URI |
+| 201 Created   | POST of new resource (identifier does not match any existing resource) | Resource payload as returned by performing a GET request on the resource’s URI |
+| 400 Bad Request | POST of new resource with invalid data                    | Error reason                                                      |
+| 404 Not Found | POST references a parent resource that cannot be found     | Error reason                                                      |
+| 409 Conflict  | POST of existing resource with mismatching attributes      | Error reason                                                      |
+
+## PATCH
+
+The PATCH verb is used to perform an update on the mutable properties of an existing resource. The PATCH request only contains the properties to be modified. Use the unique URI for the resource.
+
+### Required HTTP Response Codes for a PATCH Request
+
+| HTTP Response | Condition                                                      | Response Body Content                                             |
+|---------------|----------------------------------------------------------------|------------------------------------------------------------------|
+| 200 OK        | PATCH of existing resource completed with the fields changed   | Resource payload as returned by performing a GET request on the resource’s URI |
+| 400 Bad Request | PATCH tries to change values that don't comply with constraints | Error reason                                                      |
+| 404 Not Found | PATCH on a resource that cannot be found                       | Error reason                                                      |
+| 409 Conflict  | PATCH tries to change values that conflict with another resource identifier | Error reason                                                      |
+
+## DELETE
+
+The DELETE verb is used to remove an existing resource. Use the unique URI for the resource.
+
+### Required HTTP Response Codes for a DELETE Request
+
+| HTTP Response | Condition                                  | Response Body Content                                             |
+|---------------|--------------------------------------------|------------------------------------------------------------------|
+| 204 No Content | Found resource and deleted successfully    | Empty                                                             |
+| 404 Not Found | No resource found                           | Error reason                                                      |
+| 400 Bad Request | Found resource but unable to delete       | Error reason                                                      |
+
+## PUT
+
+The PUT verb is used in limited cases to represent the creation or update of a resource where the client is able to form the identifier (URI) for the resource. For the PUT request, the client must supply all of the resource properties, irrespective of whether the resource already exists and irrespective of whether the properties are changing.
+
+### Required HTTP Response Codes for a PUT Request
+
+| HTTP Response | Condition                                                     | Response Body Content                                             |
+|---------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| 200 OK        | PUT of existing resource with all fields saved down           | Resource payload as returned by performing a GET request on the resource’s URI |
+| 201 Created   | PUT of new or existing resource                               | Resource payload as returned by performing a GET request on the resource’s URI |
+| 400 Bad Request | PUT contains fields that do not comply with constraints      | Error reason                                                      |
+| 409 Conflict  | PUT tries to change/create fields that clash with another resource | Error reason                                                      |
 
 ---
 
