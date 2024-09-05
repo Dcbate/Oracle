@@ -1,4 +1,4 @@
-**# Development Guidelines
+# Development Guidelines
 
 As a developer, it is part of your responsibility to maintain this document and ensure it stays up to date. Let's collaborate as a team to achieve the highest quality code possible.
 
