@@ -75,7 +75,6 @@ System.out.println("After removing Banana: " + fruits);
 
 Example:
 ``` java
-Copy code
 import java.util.LinkedList;
 
 LinkedList<String> animals = new LinkedList<>();
@@ -101,7 +100,6 @@ System.out.println("After removing second animal: " + animals);
 
 Example:
 ```java
-Copy code
 import java.util.Stack;
 
 Stack<Integer> stack = new Stack<>();
@@ -126,7 +124,6 @@ System.out.println("Top element: " + stack.peek());
 
 Example:
 ``` java
-Copy code
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -152,7 +149,6 @@ System.out.println("Next in line: " + queue.peek());
 
 Example:
 ``` java
-Copy code
 import java.util.HashMap;
 
 HashMap<String, Integer> map = new HashMap<>();
@@ -178,7 +174,6 @@ System.out.println("After removing Banana: " + map);
 
 Example:
 ```java
-Copy code
 import java.util.HashSet;
 
 HashSet<String> set = new HashSet<>();
