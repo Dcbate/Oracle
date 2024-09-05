@@ -1,11 +1,14 @@
-# Development Guidelines
+# <span style="color:#2c3e90;">🌟 Development Guidelines 🌟</span>
 
 As a developer, it is part of your responsibility to maintain this document and ensure it stays up to date. Let's collaborate as a team to achieve the highest quality code possible.
 
-## General Coding Rules
+
+---
+
+## <span style="color:#3498db;">🚀 General Coding Rules</span>
 - **Leave the code better than you found it:** Tidy up as you go.
 - **Take pride in your code:** Craft it with care and attention.
-- **Always follow solid principles:** Keep them in mind as you code.
+- **Always follow SOLID principles:** Keep them in mind as you code.
 - **Use design patterns when applicable.**
 - **Write PRs that are easy to review.**
 - **Logging is crucial:** Help production support and SL3 teams.
@@ -13,41 +16,42 @@ As a developer, it is part of your responsibility to maintain this document and 
 
 ---
 
-## Naming Conventions
+## <span style="color:#9b59b6;">📛 Naming Conventions</span>
 
-### Classes
+### <span style="color:#e67e22;">Classes</span>
 - Use `CamelCase`.
 - Prefer nouns and whole words – **no abbreviations**.
 - Keep names simple and descriptive.
 - Use a pattern for classes with similar functionality (e.g., `RestClient`).
 - For classes implementing interfaces, append `Impl` (e.g., `NameImpl`).
 
-### Interfaces
+### <span style="color:#e67e22;">Interfaces</span>
 - Follow the same conventions as classes.
 
-### Packages
+### <span style="color:#e67e22;">Packages</span>
 - Use **all lowercase**.
 - Group by functionality (e.g., `controller`).
 - Keep names to **one word** if possible.
 
-### Methods
+### <span style="color:#e67e22;">Methods</span>
 - Use `camelCase` starting with a lowercase letter.
 - Begin with a verb to describe the action.
 - If the name is too long, the method may be doing too much.
 - Use common verbs like `get` and `set`.
 
-### Variables
+### <span style="color:#e67e22;">Variables</span>
 - Use `camelCase` starting with a lowercase letter.
 - Keep names short but meaningful.
 - Avoid one-character names, even in lambdas.
 - For maps, use names that describe what the map groups (e.g., `studentsByAge`).
 
-### Constants
+### <span style="color:#e67e22;">Constants</span>
 - Use `UPPERCASE` with `_` for spaces (e.g., `MAX_WIDTH`).
 
 ---
 
-## Java 17 Features
+
+## <span style="color:#2ecc71;">☕ Java 17 Features</span>
 
 We are using **Java 17**, so take full advantage of its features:
 - Method references
@@ -63,13 +67,13 @@ Make an effort to learn and apply these features—they will help in your career
 
 ---
 
-## Useful Annotations
+## <span style="color:#f39c12;">🔖 Useful Annotations</span>
 
-### Java Annotations
+### <span style="color:#d35400;">Java Annotations</span>
 - `@Deprecated` — Marks deprecated methods, classes, or fields. **Use this to signal that a piece of code should no longer be used.**
 - `@Override` — Indicates a method overrides a superclass method. **Helps identify methods that are intended to replace inherited methods.**
 
-### Spring Annotations
+### <span style="color:#d35400;">Spring Annotations</span>
 - `@RestController` — Combines `@Controller` and `@ResponseBody`, making it easier to build RESTful web services. **Used for defining REST APIs.**
 - `@Component` — Marks a Java class as a Spring component. **Indicates that Spring should manage the lifecycle of this class as a bean.**
 - `@Service` — Specialization of `@Component`, typically used for business logic services. **Used to mark service layer classes.**
@@ -82,7 +86,7 @@ Make an effort to learn and apply these features—they will help in your career
 - `@Configuration` — Indicates that a class declares one or more `@Bean` methods and may be processed by the Spring container. **Used for Java-based configuration.**
 - `@Query` — Custom SQL queries for Spring Data JPA. **Used to define native SQL queries for JPA repositories.**
 
-### Swagger Annotations
+### <span style="color:#d35400;">Swagger Annotations</span>
 - `@Tag` — Describes an API tag in the OpenAPI specification. **Used for grouping operations under a common tag.**
 - `@Parameter` — Describes an API parameter. **Used for documenting parameters in REST APIs.**
 - `@ApiResponses` — Container for multiple `@ApiResponse` annotations. **Used to document the possible responses from an API method.**
@@ -90,7 +94,7 @@ Make an effort to learn and apply these features—they will help in your career
 - `@Operation` — Describes a single API operation. **Used to document an API endpoint and its behavior.**
 - `@Schema` — Describes the schema of an object used in API responses. **Used to define models for API responses.**
 
-### Lombok Annotations
+### <span style="color:#d35400;">Lombok Annotations</span>
 - `@RequiredArgsConstructor` — Generates a constructor with required fields. **Used to create a constructor with final fields or fields marked `@NonNull`.**
 - `@AllArgsConstructor` — Generates a constructor with all fields. **Creates a constructor that initializes all class fields.**
 - `@NoArgsConstructor` — Generates a no-argument constructor. **Creates a default constructor with no parameters.**
@@ -99,7 +103,7 @@ Make an effort to learn and apply these features—they will help in your career
 - `@Builder` — Implements the builder pattern. **Allows easy object creation with the builder design pattern.**
 - `@Builder.Default` — Specifies the default value for a field in a `@Builder` class. **Ensures default values are set even when not provided explicitly.**
 
-### Jakarta Annotations
+### <span style="color:#d35400;">Jakarta Annotations</span>
 - `@NotNull` — Ensures that a field or method parameter is not null. **Used for validation to prevent null values.**
 - `@Nullable` — Indicates that a field or method parameter can be null. **Used for documentation and null-checking logic.**
 - `@Pattern` — Specifies a regular expression a string must match. **Used for validating string fields.**
@@ -111,7 +115,7 @@ Make an effort to learn and apply these features—they will help in your career
 - `@Entity` — Marks a class as a JPA entity. **Indicates that the class is a database entity.**
 - `@SequenceGenerator` — Defines a sequence generator for primary key generation. **Used for generating values using database sequences.**
 
-### Testing Annotations
+### <span style="color:#d35400;">Testing Annotations</span>
 - `@ExtendWith` — Registers an extension for JUnit tests. **Used to include additional functionality in tests.**
 - `@Mock` — Creates a mock object for testing. **Used to mock dependencies in unit tests.**
 - `@BeforeEach` — Executed before each test method. **Used to set up test conditions.**
@@ -123,7 +127,7 @@ Make an effort to learn and apply these features—they will help in your career
 
 ---
 
-## Code Smells
+## <span style="color:#e74c3c;">🛠️ Code Smells</span>
 
 Avoid adding the following **code smells** to the codebase. If you encounter any, please address them:
 
@@ -142,7 +146,7 @@ Avoid adding the following **code smells** to the codebase. If you encounter any
 
 ---
 
-## Testing
+## <span style="color:#2980b9;">🧪 Testing</span>
 
 We aim for **100% unit test coverage** on all code going to production. Use **JUnit 5** and **Mockito** for unit tests.
 
@@ -164,7 +168,7 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 
 ---
 
-## Rest Controllers
+## <span style="color:#c0392b;">📦 Rest Controllers</span>
 
 ### What do they do?
 
@@ -185,7 +189,7 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 
 ---
 
-## Service Classes
+## <span style="color:#27ae60;">🛠️ Service Classes</span>
 
 ### What do they do?
 
@@ -204,7 +208,7 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 
 ---
 
-## Repository Layer
+## <span style="color:#34495e;">📂 Repository Layer</span>
 
 ### What do they do?
 
@@ -220,12 +224,12 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 
 ---
 
-# Rest API Standards
+# <span style="color:#8e44ad;">📑 Rest API Standards</span>
 
 ## Introduction
 The standard, however, has been introduced after a large number of services have already been delivered and running in the production environment, and as such, conformity to it is lacking. It is expected that where developers need to make changes to an API, they will bring it in line with these standards. Please consider the users of the APIs and if your changes are breaking changes. If they are breaking changes, make sure all necessary dependencies are updated accordingly.
 
-## General Standards
+## <span style="color:#f1c40f;">⚙️ General Standards</span>
 All APIs must observe the following standards:
 - Any resource provided by an API must have an enterprise unique identifier in the form of a URI.
 - Input to or output from the API must comply with ISO8601 standard.
@@ -243,8 +247,13 @@ The primary data representation. The JSON response must return a unique URI for 
 
 ### A Collection
 This refers to a group of resources, e.g., `applications`.
-Than
-## Required HTTP Response Codes for a GET Request
+
+## <span style="color:#2ecc71;">📥 GET</span>
+
+GET is used to retrieve data from a resource. The GET request is made to the singular or plural endpoint of the resource type depending on whether a specific resource or a collection of resources is being requested.
+
+
+### Required HTTP Response Codes for a GET Request</span>
 
 | HTTP Response | Condition                              | Response Body Content                         |
 |---------------|----------------------------------------|----------------------------------------------|
@@ -257,7 +266,7 @@ Than
 |---------------|----------------------------------------|----------------------------------------------|
 | 200 OK        | Found or not found resources in database | All found resources even if the collection is empty |
 
-## POST
+## <span style="color:#3498db;">🔼 POST</span>
 
 The POST verb is used for the creation of a new resource where the client cannot form the resource identifier (URI). The POST is to the singular endpoint of the resource type, and the request body should contain all mandatory fields to create a resource.
 
@@ -271,7 +280,7 @@ The POST verb is used for the creation of a new resource where the client cannot
 | 404 Not Found | POST references a parent resource that cannot be found     | Error reason                                                      |
 | 409 Conflict  | POST of existing resource with mismatching attributes      | Error reason                                                      |
 
-## PATCH
+## <span style="color:#9b59b6;">🔧 PATCH</span>
 
 The PATCH verb is used to perform an update on the mutable properties of an existing resource. The PATCH request only contains the properties to be modified. Use the unique URI for the resource.
 
@@ -284,7 +293,7 @@ The PATCH verb is used to perform an update on the mutable properties of an exis
 | 404 Not Found | PATCH on a resource that cannot be found                       | Error reason                                                      |
 | 409 Conflict  | PATCH tries to change values that conflict with another resource identifier | Error reason                                                      |
 
-## DELETE
+## <span style="color:#c0392b;">🗑️ DELETE</span>
 
 The DELETE verb is used to remove an existing resource. Use the unique URI for the resource.
 
@@ -296,7 +305,7 @@ The DELETE verb is used to remove an existing resource. Use the unique URI for t
 | 404 Not Found | No resource found                           | Error reason                                                      |
 | 400 Bad Request | Found resource but unable to delete       | Error reason                                                      |
 
-## PUT
+## <span style="color:#2980b9;">📥 PUT</span>
 
 The PUT verb is used in limited cases to represent the creation or update of a resource where the client is able to form the identifier (URI) for the resource. For the PUT request, the client must supply all of the resource properties, irrespective of whether the resource already exists and irrespective of whether the properties are changing.
 
@@ -310,7 +319,7 @@ The PUT verb is used in limited cases to represent the creation or update of a r
 | 409 Conflict  | PUT tries to change/create fields that clash with another resource | Error reason                                                      |
 
 
-## API Versioning Guidelines
+## <span style="color:#8e44ad;">API Versioning Guidelines</span>
 
 To ensure backward compatibility and smooth transitions during updates, it's important to follow these API versioning guidelines:
 
@@ -318,8 +327,7 @@ To ensure backward compatibility and smooth transitions during updates, it's imp
 Each API should include a version number in the URL path. This makes it easy to update the API while maintaining support for older versions. The version should be included as the first part of the URL path.
 
 **Example:**
-GET /v1/applications
-
+`GET /v1/applications`
 
 ### 2. Deprecation Strategy
 When deprecating an API version, follow a structured deprecation strategy:
@@ -327,8 +335,8 @@ When deprecating an API version, follow a structured deprecation strategy:
 - **Inform clients** about the deprecation via response headers or documentation.
 - **Support old versions** for a reasonable period to allow clients time to transition to the new version.
 
-**Example of Deprecation Response Header:**
-
+**Example of Deprecation Response Header:**  
+`Deprecation: true`
 
 ### 3. Avoid Versioning Through Headers
 While possible, avoid versioning via headers as it makes the API less intuitive and harder to debug. Always prefer versioning via the URL path.
@@ -342,9 +350,7 @@ While possible, avoid versioning via headers as it makes the API less intuitive 
 If a version is not specified, the API should default to the latest stable version. Ensure that the default version is backward-compatible with the most recent major release to avoid breaking client integrations.
 
 **Example:**
-
-GET /api/applications (Defaults to /api/v1/applications)
-
+`GET /api/applications` (Defaults to `/api/v1/applications`)
 
 ### Summary
 - Use the URL path to version your APIs.
@@ -353,7 +359,7 @@ GET /api/applications (Defaults to /api/v1/applications)
 
 ---
 
-## IntelliJ
+## <span style="color:#f1c40f;">⚙️ IntelliJ</span>
 
 IntelliJ is a powerful tool—use it!
 
@@ -372,4 +378,5 @@ Use Git to set pre-commit checks. Select checks that align with your coding stan
 - Linting rules
 - Running unit tests
 - Checking for code coverage
-- Ensuring no sensitive information is committed**
+- Ensuring no sensitive information is committed
+---
