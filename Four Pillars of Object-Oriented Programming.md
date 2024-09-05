@@ -3,9 +3,9 @@
 Object-Oriented Programming (OOP) is a paradigm that uses "objects" to represent data and methods to manipulate that data. The four fundamental principles of OOP help in designing software in a modular, reusable, and scalable manner. These principles are:
 
 1. [**Encapsulation** 🔒](#encapsulation-)
-2. [**Abstraction** 🧩]()
-3. [**Inheritance** 🧬]()
-4. [**Polymorphism** 🌀]()
+2. [**Abstraction** 🧩](#abstraction-)
+3. [**Inheritance** 🧬](#inheritance-)
+4. [**Polymorphism** 🌀](#polymorphism-)
 
 ## Encapsulation 🔒
 
