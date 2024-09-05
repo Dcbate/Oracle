@@ -2,12 +2,12 @@
 
 Object-Oriented Programming (OOP) is a paradigm that uses "objects" to represent data and methods to manipulate that data. The four fundamental principles of OOP help in designing software in a modular, reusable, and scalable manner. These principles are:
 
-1. **Encapsulation** 🔒
-2. **Abstraction** 🧩
-3. **Inheritance** 🧬
-4. **Polymorphism** 🌀
+1. [**Encapsulation** 🔒](#encapsulation-)
+2. [**Abstraction** 🧩]()
+3. [**Inheritance** 🧬]()
+4. [**Polymorphism** 🌀]()
 
-## 1. Encapsulation 🔒
+## Encapsulation 🔒
 
 ### Definition
 Encapsulation is the practice of wrapping data (variables) and code (methods) together as a single unit, or class. It hides the internal state of the object and only exposes the necessary parts of the object to the outside world.
@@ -62,7 +62,7 @@ public class Person {
 ### Explanation 🌟
 This design follows encapsulation principles by hiding the internal state of the `Person` object and providing controlled access through public methods. This not only ensures data integrity but also makes the code easier to maintain and modify.
 
-## 2. Abstraction 🧩
+## Abstraction 🧩
 
 ### Definition
 Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It simplifies interactions with objects by focusing on **what they do** rather than **how they do it**.
@@ -120,7 +120,7 @@ public class Main {
 
 `Shape` is an abstract class with an abstract method `draw()`. `Circle` and `Rectangle` are concrete subclasses that provide specific implementations of the `draw()` method. This abstraction allows you to interact with different shapes using a common interface while hiding the specific details of how each shape is drawn.
 
-## 3. Inheritance 🧬
+## Inheritance 🧬
 
 ### Definition
 Inheritance is a mechanism by which one class (the **subclass**) can inherit attributes and methods from another class (the **superclass**). This promotes code reusability and establishes a natural hierarchy between classes, allowing for the creation of more specialized subclasses.
@@ -179,7 +179,7 @@ public class Main {
 `Animal` is the superclass with a method `eat()`. `Dog` is a subclass that extends `Animal` and overrides the `eat()` method to provide a specific implementation. This demonstrates how `Dog` inherits the behavior from `Animal` and customizes it, allowing for more specialized behavior while reusing common functionality.
 
 
-## 4. Polymorphism 🌀
+## Polymorphism 🌀
 
 ### Definition
 Polymorphism allows objects to be treated as instances of their parent class rather than their actual class. It enables a single interface to be used for different underlying data types. This concept provides the ability to call the same method on different objects, each responding in a way specific to their class.
