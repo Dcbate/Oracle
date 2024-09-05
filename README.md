@@ -4,7 +4,7 @@ This documentation should be kept up-to-date with the latest standards and best 
 
 Contains:
 
-1. 📏  [Coding Standards](#1--arrays)
+1. 📏  [Coding Standards](CodingStandards.md)
 2. 🧱 SOLID Principles
 3. 🎨 The Four Pillars of Object-Oriented
 4. 📚 Java Data Structures
