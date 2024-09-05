@@ -3,6 +3,22 @@
 As a developer, it is part of your responsibility to maintain this document and ensure it stays up to date. Let's collaborate as a team to achieve the highest quality code possible.
 
 
+# 📑 **Table of Contents**
+
+1. [🚀 General Coding Rules](#-development-guidelines)
+2. [📛 Naming Conventions](#-general-coding-rules)
+3. [☕ Java 17 Features](#-naming-conventions)
+4. [🔖 Useful Annotations](#-code-formatting)
+5. [🛠️ Code Smells](#-solid-principles)
+6. [🧪 Testing](#-testing-standards)
+7. [🧩 Controller-Service-Repository pattern](#-naming-conventions)  
+      7.1. [📦 Rest Controllers](#-classes)  
+      7.2. [🛠️ Service Classes](#-methods)  
+      7.3. [📂 Repository Layer](#-variables)
+8. [📑 Rest API Standards](#-documentation-guidelines)
+9. [⚙️ IntelliJ](#-code-reviews)
+
+
 ---
 
 ## <span style="color:#3498db;">🚀 General Coding Rules</span>
@@ -167,6 +183,8 @@ We aim for **100% unit test coverage** on all code going to production. Use **JU
 - Keep them simple.
 
 ---
+# <span style="color:#c03d7b;"> 🧩 Controller-Service-Repository pattern
+
 
 ## <span style="color:#c0392b;">📦 Rest Controllers</span>
 
