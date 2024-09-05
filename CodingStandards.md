@@ -380,3 +380,6 @@ Use Git to set pre-commit checks. Select checks that align with your coding stan
 - Checking for code coverage
 - Ensuring no sensitive information is committed
 ---
+
+
+Happy coding! 🚀
