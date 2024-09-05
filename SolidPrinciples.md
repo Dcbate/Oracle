@@ -3,6 +3,12 @@
 ## 🛠️ **Introduction**
 In development, we strive to create **maintainable**, **scalable**, and **flexible** code. As we grow as a team and platform, just like in life, the goal is to make it easier for people who follow us. These principles establish a design that everyone can follow. The **SOLID** acronym was introduced by *Robert C. Martin* in 2000. We should always write code with the idea of a new joiner 5 years from now being able to understand and build on our software. We should take pride in our work and avoid leaving tech debt for colleagues to clean up in the future. In this course, you will learn what these principles are but, more importantly, understand **why** we use them.
 
+
+1. [**S**ingle Responsibility Principle (SRP)](#-single-responsibility-principle-srp)
+2. [**O**pen-Closed Principle (OCP)](#-open-closed-principle-ocp)
+3. [**L**iskov Substitution Principle (LSP)](#-liskov-substitution-principle-lsp)
+4. [**I**nterface Segregation Principle (ISP)](#%EF%B8%8F-interface-segregation-principle-isp)
+5. [**D**ependency Inversion Principle (DIP)](#-dependency-inversion-principle-dip)
 ---
 
 ## 📏 **Single Responsibility Principle (SRP)**
