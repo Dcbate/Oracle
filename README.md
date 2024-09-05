@@ -1,4 +1,4 @@
-# Development Guidelines
+**# Development Guidelines
 
 As a developer, it is part of your responsibility to maintain this document and ensure it stays up to date. Let's collaborate as a team to achieve the highest quality code possible.
 
@@ -239,11 +239,11 @@ All APIs must observe the following standards:
 - Do not expose database ID keys to clients.
 
 ### A Resource
-The primary data representation. The JSON response must return a unique URI for that resource, e.g., `application` or `businessarea`.
+The primary data representation. The JSON response must return a unique URI for that resource, e.g., `application` or `student`.
 
 ### A Collection
 This refers to a group of resources, e.g., `applications`.
-
+Than
 ## Required HTTP Response Codes for a GET Request
 
 | HTTP Response | Condition                              | Response Body Content                         |
@@ -309,6 +309,48 @@ The PUT verb is used in limited cases to represent the creation or update of a r
 | 400 Bad Request | PUT contains fields that do not comply with constraints      | Error reason                                                      |
 | 409 Conflict  | PUT tries to change/create fields that clash with another resource | Error reason                                                      |
 
+
+## API Versioning Guidelines
+
+To ensure backward compatibility and smooth transitions during updates, it's important to follow these API versioning guidelines:
+
+### 1. Use Versioning in the URL
+Each API should include a version number in the URL path. This makes it easy to update the API while maintaining support for older versions. The version should be included as the first part of the URL path.
+
+**Example:**
+GET /v1/applications
+
+
+### 2. Deprecation Strategy
+When deprecating an API version, follow a structured deprecation strategy:
+- **Announce** the deprecation at least one version in advance.
+- **Inform clients** about the deprecation via response headers or documentation.
+- **Support old versions** for a reasonable period to allow clients time to transition to the new version.
+
+**Example of Deprecation Response Header:**
+
+
+### 3. Avoid Versioning Through Headers
+While possible, avoid versioning via headers as it makes the API less intuitive and harder to debug. Always prefer versioning via the URL path.
+
+### 5. Considerations for Breaking Changes
+- Ensure you increment the **MAJOR** version when making breaking changes.
+- Clearly communicate these changes through release notes and API documentation.
+- Provide a migration path or guidelines for clients to transition to the new version.
+
+### 6. Default Version
+If a version is not specified, the API should default to the latest stable version. Ensure that the default version is backward-compatible with the most recent major release to avoid breaking client integrations.
+
+**Example:**
+
+GET /api/applications (Defaults to /api/v1/applications)
+
+
+### Summary
+- Use the URL path to version your APIs.
+- Clearly communicate any deprecations and allow sufficient time for clients to transition.
+- Avoid breaking changes in minor or patch versions.
+
 ---
 
 ## IntelliJ
@@ -330,4 +372,4 @@ Use Git to set pre-commit checks. Select checks that align with your coding stan
 - Linting rules
 - Running unit tests
 - Checking for code coverage
-- Ensuring no sensitive information is committed
+- Ensuring no sensitive information is committed**
