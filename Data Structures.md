@@ -4,13 +4,13 @@ In this document, we will cover various data structures in Java, providing examp
 
 ## 📖 Table of Contents
 
-1. [Arrays](#1-arrays)
-2. [ArrayList](#2-arraylist)
-3. [LinkedList](#3-linkedlist)
+1. [Arrays](#1--arrays)
+2. [ArrayList](#2--arraylist)
+3. [LinkedList](#3--linkedlist)
 4. [Stack](#4--stack)
-5. [Queue](#5-queue)
-6. [HashMap](#6-hashmap)
-7. [HashSet](#7-hashset)
+5. [Queue](#5--queue)
+6. [HashMap](#6--hashmap)
+7. [HashSet](#7--hashset)
 
 ---
 
