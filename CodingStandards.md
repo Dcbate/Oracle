@@ -5,18 +5,18 @@ As a developer, it is part of your responsibility to maintain this document and 
 
 # 📑 **Table of Contents**
 
-1. [🚀 General Coding Rules](#-development-guidelines)
-2. [📛 Naming Conventions](#-general-coding-rules)
-3. [☕ Java 17 Features](#-naming-conventions)
-4. [🔖 Useful Annotations](#-code-formatting)
-5. [🛠️ Code Smells](#-solid-principles)
-6. [🧪 Testing](#-testing-standards)
-7. [🧩 Controller-Service-Repository pattern](#-naming-conventions)  
-      7.1. [📦 Rest Controllers](#-classes)  
-      7.2. [🛠️ Service Classes](#-methods)  
-      7.3. [📂 Repository Layer](#-variables)
-8. [📑 Rest API Standards](#-documentation-guidelines)
-9. [⚙️ IntelliJ](#-code-reviews)
+1. [🚀 General Coding Rules](#-general-coding-rules)
+2. [📛 Naming Conventions](#-naming-conventions)
+3. [☕ Java 17 Features](#-java-17-features)
+4. [🔖 Useful Annotations](#-useful-annotations)
+5. [🛠️ Code Smells](#%EF%B8%8F-code-smells)
+6. [🧪 Testing](#-testing)
+7. [🧩 Controller-Service-Repository pattern](#--controller-service-repository-pattern)  
+      7.1. [📦 Rest Controllers](#-rest-controllers)  
+      7.2. [🛠️ Service Classes](#%EF%B8%8F-service-classes)  
+      7.3. [📂 Repository Layer](#-repository-layer)
+8. [📑 Rest API Standards](#-rest-api-standards)
+9. [⚙️ IntelliJ](#%EF%B8%8F-intellij)
 
 
 ---
