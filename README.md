@@ -4,11 +4,10 @@ This documentation should be kept up-to-date with the latest standards and best 
 
 Contains:
 
- 📏 Coding Standards
-
- 🧱 SOLID Principles
-
-🎨 The Four Pillars of Object-Oriented
+1. 📏  [Coding Standards](#1--arrays)
+2. 🧱 SOLID Principles
+3. 🎨 The Four Pillars of Object-Oriented
+4. 📚 Java Data Structures
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
