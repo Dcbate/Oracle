@@ -30,10 +30,7 @@ public class LinkedListExample {
         list.add("Apple");
         list.add("Banana");
         list.add("Cherry");
-        
-        
-        
-        
+
         // Inserting an element at a specific position
         list.add(1, "Orange");
         
