@@ -56,7 +56,7 @@ import java.util.Queue;
 public class QueueExample {
     public static void main(String[] args) {
         // Using LinkedList as a Queue
-        Queue<String> queue = new LinkedList<>();
+        LinkedList<String> queue = new LinkedList<>();
         
         // Adding elements to the queue
         queue.add("First");
