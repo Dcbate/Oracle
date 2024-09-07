@@ -16,12 +16,12 @@ This document is a living resource and should be maintained regularly to reflect
 
 # Leetcode 
 
-1. [Contains Duplicate](leetcode/containsduplicate/Contains Duplicate.md)
-2. [Plus One](leetcode/plusOne/Plus One.md)
-3. [Single Number](leetcode/singlenumber/Single Number.md)
-4. [Summary Ranges](leetcode/summaryranges/Summary Ranges.md)
+1. [Contains Duplicate](leetcode/containsduplicate/ContainsDuplicate.md)
+2. [Plus One](leetcode/plusOne/PlusOne.md)
+3. [Single Number](leetcode/singlenumber/SingleNumber.md)
+4. [Summary Ranges](leetcode/summaryranges/SummaryRanges.md)
 5. [Two Sum](leetcode/twosum/TwoSum.md)
-6. [Valid Palindrome](leetcode/validpalindrome/Valid Palindrome.md)
-7. [Valid Parentheses](leetcode/validparentheses/Valid Parentheses.md)
+6. [Valid Palindrome](leetcode/validpalindrome/ValidPalindrome.md)
+7. [Valid Parentheses](leetcode/validparentheses/ValidParentheses.md)
 
 Happy coding! 🚀
