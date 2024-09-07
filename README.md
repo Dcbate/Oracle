@@ -19,12 +19,9 @@ This document is a living resource and should be maintained regularly to reflect
 1. [Contains Duplicate](leetcode/containsduplicate/ContainsDuplicate.md)
 2. [Plus One](leetcode/plusOne/PlusOne.md)
 3. [Single Number](leetcode/singlenumber/SingleNumber.md)
-4. [SummaryRanges](leetcode/summaryranges/SummaryRanges.md)
+4. [Summary Ranges](leetcode/summaryranges/SummaryRanges.md)
 5. [Two Sum](leetcode/twosum/TwoSum.md)
 6. [Valid Palindrome](leetcode/validpalindrome/ValidPalindrome.md)
 7. [Valid Parentheses](leetcode/validparentheses/ValidParentheses.md)
-
-
-
 
 Happy coding! 🚀
