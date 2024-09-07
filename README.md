@@ -4,8 +4,8 @@ This documentation should be kept up-to-date with the latest standards and best 
 
 Contains:
 
-1. 📏  [Coding Standards](CodingStandards.md)
-2. 🧱 [SOLID Principles](SolidPrinciples.md)
+1. 📏  [Coding Standards](documentation/CodingStandards.md)
+2. 🧱 [SOLID Principles](documentation/SolidPrinciples.md)
 3. 🎨 [The Four Pillars of Object-Oriented](Four%20Pillars%20of%20Object-Oriented%20Programming.md)
 4. 📚 [Java Data Structures](Java%20Data%20Structures.md)
 
