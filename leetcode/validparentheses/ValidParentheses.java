@@ -7,7 +7,6 @@ import java.util.Stack;
 public class ValidParentheses {
      public boolean isValid(String s) {
 
-
             Stack<Character> stack = new Stack<Character>(); // create an empty stack
 
             for (char c : s.toCharArray()) { // loop through each character in the string
