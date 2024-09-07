@@ -89,6 +89,6 @@ int index = Collections.binarySearch(numbers, 20);
 
 ---
 
-### 🚀 Conclusion
+### 🔚 Conclusion
 
 `ArrayList` is a flexible and dynamic data structure that allows for resizable storage of elements. It provides efficient random access and built-in methods for manipulating elements, making it a great option when the size of the data is unpredictable. However, its performance for insertion and deletion operations in the middle of the list is less efficient compared to other data structures.
