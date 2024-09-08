@@ -17,7 +17,7 @@ Contains:
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
-# Leetcode 
+## Leetcode 
 
 1. [Contains Duplicate](leetcode/containsduplicate/ContainsDuplicate.md)
 2. [Plus One](leetcode/plusOne/PlusOne.md)
@@ -26,5 +26,7 @@ This document is a living resource and should be maintained regularly to reflect
 5. [Two Sum](leetcode/twosum/TwoSum.md)
 6. [Valid Palindrome](leetcode/validpalindrome/ValidPalindrome.md)
 7. [Valid Parentheses](leetcode/validparentheses/ValidParentheses.md)
+8. [GroupAnagrams](leetcode/groupanagrams/groupAnagrams.md)
+
 
 Happy coding! 🚀
