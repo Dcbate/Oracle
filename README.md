@@ -17,7 +17,7 @@ Contains:
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
-# Leetcode 
+## Leetcode 
 
 1. [Contains Duplicate](leetcode/containsduplicate/ContainsDuplicate.md)
 2. [Plus One](leetcode/plusOne/PlusOne.md)
