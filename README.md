@@ -26,5 +26,7 @@ This document is a living resource and should be maintained regularly to reflect
 5. [Two Sum](leetcode/twosum/TwoSum.md)
 6. [Valid Palindrome](leetcode/validpalindrome/ValidPalindrome.md)
 7. [Valid Parentheses](leetcode/validparentheses/ValidParentheses.md)
+8. [GroupAnagrams](leetcode/groupanagrams/GroupAnagrams.md)
+
 
 Happy coding! 🚀
