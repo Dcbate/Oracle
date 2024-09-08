@@ -8,17 +8,16 @@ public class SingleNumber {
 
     public static int singleNumber(int[] nums) {
 
-
-        Set<Integer> map = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
         for (int num : nums) {
-            if (map.contains(num)) {
-                map.remove(num);
+            if (set.contains(num)) {
+                set.remove(num);
             } else {
-                map.add(num);
+                set.add(num);
             }
         }
-        return map.stream().findFirst().get();
+        return set.stream().findFirst().get();
 }
 
     public static void main(String[] args) {
