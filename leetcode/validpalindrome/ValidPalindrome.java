@@ -11,26 +11,15 @@ public class ValidPalindrome {
 
         char[] array = s.toCharArray();
 
-        boolean even = array.length%2 == 0;
-        int oddLength = (array.length/2);
-        int evenLength = (array.length/2);
+        int length = array.length/2;
 
-        if(even){
-            for(int i =0;i<evenLength;i++){
+
+            for(int i =0;i<length;i++){
                 char left =array[i];
                 char right = array[array.length-1-i];
                 if(left != right){
                     return false;
                 }}
-        }else{
-            for(int i =0;i<oddLength;i++){
-                char left =array[i];
-                char right = array[array.length-1-i];
-                if(left != right){
-                    return false;
-                }}
-
-        }
 
         return true;
 
@@ -38,7 +27,7 @@ public class ValidPalindrome {
 
 
     public static void main(String[] args) {
-        isPalindrome("Was it a car oor a cat I saw?");
+        isPalindrome("tab a cat");
     }
 
 }
