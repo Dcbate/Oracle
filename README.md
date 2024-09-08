@@ -11,6 +11,8 @@ Contains:
 2. 🧱 [SOLID Principles](documentation/SolidPrinciples.md)
 3. 🎨 [The Four Pillars of Object-Oriented](Four%20Pillars%20of%20Object-Oriented%20Programming.md)
 4. 📚 [Java Data Structures](Java%20Data%20Structures.md)
+5. 📚 [Big O Notation](Big%20O%20Notation.md)
+
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
