@@ -1,7 +1,6 @@
 package leetcode.groupanagrams;
 
 import org.junit.Test;
-import org.junit.Before;
 
 import static leetcode.groupanagrams.GroupAnagrams.solution;
 import static org.junit.Assert.*;
