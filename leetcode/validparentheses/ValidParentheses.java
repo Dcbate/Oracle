@@ -1,7 +1,5 @@
 package leetcode.validparentheses;
 
-import leetcode.twosum.TwoSum;
-
 import java.util.Stack;
 
 public class ValidParentheses {
@@ -26,9 +24,4 @@ public class ValidParentheses {
             return stack.isEmpty();
         }
 
-    public static void main(String[] args) {
-        ValidParentheses solution = new ValidParentheses();
-        System.out.println(solution.isValid("{[]}["));
-
-    }
 }

@@ -2,7 +2,6 @@ package leetcode.validpalindrome;
 
 public class ValidPalindrome {
 
-
     public static boolean isPalindrome(String s){
 
         s = s.replaceAll(" ","");
@@ -24,10 +23,4 @@ public class ValidPalindrome {
         return true;
 
     };
-
-
-    public static void main(String[] args) {
-        isPalindrome("tab a cat");
-    }
-
 }
