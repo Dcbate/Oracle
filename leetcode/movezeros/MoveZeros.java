@@ -1,8 +1,5 @@
 package leetcode.movezeros;
-
 import java.util.Arrays;
-import java.util.HashSet;
-
 public class MoveZeros {
 
     public static void moveZeroes(int[] nums) {
