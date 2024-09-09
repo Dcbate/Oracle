@@ -7,17 +7,18 @@ This documentation should be kept up-to-date with the latest standards and best 
 
 Contains:
 
-1. 📏  [Coding Standards](documentation/CodingStandards.md)
+1. 📏 [Coding Standards](documentation/CodingStandards.md)
 2. 🧱 [SOLID Principles](documentation/SolidPrinciples.md)
-3. 🎨 [The Four Pillars of Object-Oriented](documentation/Four%20Pillars%20of%20Object-Oriented%20Programming.md)
+3. 🎨 [The Four Pillars of Object-Oriented Programming](documentation/Four%20Pillars%20of%20Object-Oriented%20Programming.md)
 4. 📚 [Java Data Structures](documentation/Java%20Data%20Structures.md)
 5. 📊 [Big O Notation](documentation/Big%20O%20Notation.md)
 6. 🧠 [Algorithms](documentation/Algorithms.md)
 7. ⏱️ [Synchronized](documentation/Synchronized.md)
 8. 🪡 [Threads](documentation/Threads.md)
-9. 🍩 [Java Keywords]
-10. 🐁 [Java Primitive] 
-11. heap and stack
+9. 🍩 [Java Keywords](documentation/Java%20Keywords.md)
+10. 🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)
+11. 🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)
+12. 🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 

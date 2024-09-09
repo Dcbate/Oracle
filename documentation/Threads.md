@@ -66,7 +66,7 @@ A thread in Java can have several states during its lifecycle:
 1. **NEW**: The thread is created but not yet started.
 2. **RUNNABLE**: The thread is executing.
 3. **BLOCKED**: The thread is waiting to acquire a lock.
-4. **WAITING**: The thread is waiting indefinitely for another thread to perform a specific action.
+4. **WAITING**: The thread is waiting for another thread to perform a specific action.
 5. **TIMED_WAITING**: The thread is waiting for another thread for a specified amount of time.
 6. **TERMINATED**: The thread has finished execution.
 
