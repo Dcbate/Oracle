@@ -13,7 +13,7 @@ Contains:
 4. 📚 [Java Data Structures](documentation/Java%20Data%20Structures.md)
 5. 📊 [Big O Notation](documentation/Big%20O%20Notation.md)
 6. 🧠 [Algorithms](documentation/Algorithms.md)
-7. ⏱️ [synchronized](documentation/Synchronized.md)
+7. ⏱️ [Synchronized](documentation/Synchronized.md)
 8. 🪡 [Threads] 
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
