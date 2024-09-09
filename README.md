@@ -14,7 +14,7 @@ Contains:
 5. 📊 [Big O Notation](documentation/Big%20O%20Notation.md)
 6. 🧠 [Algorithms](documentation/Algorithms.md)
 7. ⏱️ [Synchronized](documentation/Synchronized.md)
-8. 🪡 [Threads]
+8. 🪡 [Threads](documentation/Threads.md)
 9. 🍩 [Java Keywords]
 10. 🐁 [Java Primitive] 
 11. heap and stack
