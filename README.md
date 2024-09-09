@@ -16,6 +16,7 @@ Contains:
 7. ⏱️ [Synchronized](documentation/Synchronized.md)
 8. 🪡 [Threads]
 9. 🍩 [Java Keywords]
+10. 🐁 [Java Primitive] 
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
