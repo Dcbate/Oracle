@@ -30,6 +30,7 @@ switch/if/for statements
 databases 
 desgign patterns 
 Kafka 
+k8s
 
 
 
