@@ -19,6 +19,16 @@ Contains:
 10. 🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)
 11. 🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)
 12. 🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)
+Exceptions 
+Spring boot
+String Class
+interfaces and classes
+lambdas
+sealed classes 
+records
+switch/if/for statements
+databases 
+
 
 This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
