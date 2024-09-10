@@ -1,9 +1,7 @@
 # Oracle
 
 
-## 📄 Documentation to Keep Updated
-
-This documentation should be kept up-to-date with the latest standards and best practices. 
+## 📄 Documentation
 
 Contains:
 
@@ -19,18 +17,18 @@ Contains:
 10. 🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)
 11. 🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)
 12. 🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)
-Exceptions 
-Spring boot
-String Class
-interfaces and classes
-lambdas
-sealed classes 
-records
-switch/if/for statements
-databases 
-desgign patterns 
-Kafka 
-k8s
+13. 🚨 [Exceptions](documentation/Exceptions.md)
+14. 🌱 [Spring Boot](documentation/SpringBoot.md)
+15. 🔗 [String Class](documentation/StringClass.md)
+16. 🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)
+17. 🎯 [Lambdas](documentation/Lambdas.md)
+18. 🚪 [Sealed Classes](documentation/SealedClasses.md)
+19. 📜 [Records](documentation/Records.md)
+20. 🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)
+21. 🗄️ [Databases](documentation/Databases.md)
+22. 🏛️ [Design Patterns](documentation/DesignPatterns.md)
+23. 🌀 [Kafka](documentation/Kafka.md)
+24. 🚢 [Kubernetes (K8s)](documentation/K8s.md)
 
 
 
