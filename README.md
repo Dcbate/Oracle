@@ -31,7 +31,6 @@ databases
 desgign patterns 
 
 
-This document is a living resource and should be maintained regularly to reflect updates in coding standards and best practices.
 
 ## Leetcode 
 
