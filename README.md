@@ -13,6 +13,7 @@ Contains:
 6. 🧠 [Algorithms](documentation/Algorithms.md)
 7. ⏱️ [Synchronized](documentation/Synchronized.md)
 8. 🪡 [Threads](documentation/Threads.md)
+9. [Big O of Operations on Java Data Structures](documentation/Big%20O%20of%20Operations%20on%20Java%20Data%20Structures.md)
 9. 🍩 [Java Keywords](documentation/Java%20Keywords.md)
 10. 🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)
 11. 🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)
