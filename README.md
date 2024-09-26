@@ -29,8 +29,8 @@ Contains:
 21. 🗄️ [Databases](documentation/Databases.md)
 22. 🏛️ [Design Patterns](documentation/DesignPatterns.md)
 23. 🌀 [Kafka](documentation/Kafka.md)
-24. 🚢 [Kubernetes (K8s)](documentation/K8s.md)
-25. docker
+24. 🚢 [Kubernetes (K8s)](documentation/K8s.md)  and how it works with docker 
+25. docker and how it works with k8s
 
 
 
