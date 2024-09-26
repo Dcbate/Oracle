@@ -1,36 +1,35 @@
 # Oracle
 
 
-## 📄 Documentation
+### 📚 Documentation Resources:
 
-Contains:
-
-1. 📏 [Coding Standards](documentation/CodingStandards.md)
-2. 🧱 [SOLID Principles](documentation/SolidPrinciples.md)
-3. 🎨 [The Four Pillars of Object-Oriented Programming](documentation/Four%20Pillars%20of%20Object-Oriented%20Programming.md)
-4. 📚 [Java Data Structures](documentation/Java%20Data%20Structures.md)
-5. 📊 [Big O Notation](documentation/Big%20O%20Notation.md)
-6. 🧠 [Algorithms](documentation/Algorithms.md)
-7. ⏱️ [Synchronized](documentation/Synchronized.md)
-8. 🪡 [Threads](documentation/Threads.md)
-9. [Big O of Operations on Java Data Structures](documentation/Big%20O%20of%20Operations%20on%20Java%20Data%20Structures.md)
-9. 🍩 [Java Keywords](documentation/Java%20Keywords.md)
-10. 🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)
-11. 🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)
-12. 🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)
-13. 🚨 [Exceptions](documentation/Exceptions.md)
-14. 🌱 [Spring Boot](documentation/SpringBoot.md)
-15. 🔗 [String Class](documentation/StringClass.md)
-16. 🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)
-17. 🎯 [Lambdas](documentation/Lambdas.md)
-18. 🚪 [Sealed Classes](documentation/SealedClasses.md)
-19. 📜 [Records](documentation/Records.md)
-20. 🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)
-21. 🗄️ [Databases](documentation/Databases.md)
-22. 🏛️ [Design Patterns](documentation/DesignPatterns.md)
-23. 🌀 [Kafka](documentation/Kafka.md)
-24. 🚢 [Kubernetes (K8s)](documentation/K8s.md)  and how it works with docker 
-25. docker and how it works with k8s
+1. **📏 [Coding Standards](documentation/CodingStandards.md)**
+2. **🧱 [SOLID Principles](documentation/SolidPrinciples.md)**
+3. **🎨 [The Four Pillars of Object-Oriented Programming](documentation/Four%20Pillars%20of%20Object-Oriented%20Programming.md)**
+4. **📚 [Java Data Structures](documentation/Java%20Data%20Structures.md)**
+5. **📊 [Big O Notation](documentation/Big%20O%20Notation.md)**
+6. **🧠 [Algorithms](documentation/Algorithms.md)**
+7. **⏱️ [Synchronized](documentation/Synchronized.md)** // TODO
+8. **🪡 [Threads](documentation/Threads.md)**
+9. **📊 [Big O of Operations on Java Data Structures](documentation/Big%20O%20of%20Operations%20on%20Java%20Data%20Structures.md)**
+10. **🍩 [Java Keywords](documentation/Java%20Keywords.md)**
+11. **🐁 [Java Primitive Types](documentation/Java%20Primitive%20Types.md)**
+12. **🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)**
+13. **🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)** TODO
+14. **🚨 [Exceptions](documentation/Exceptions.md)** TODO
+15. **🌱 [Spring Boot](documentation/SpringBoot.md)** TODO
+16. **🔗 [String Class](documentation/StringClass.md)** TODO
+17. **🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)** TODO
+18. **🎯 [Lambdas](documentation/Lambdas.md)** TODO
+19. **🚪 [Sealed Classes](documentation/SealedClasses.md)** TODO
+20. **📜 [Records](documentation/Records.md)** TODO
+21. **🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)** TODO
+22. **🗄️ [Databases](documentation/Databases.md)** TODO
+23. **🏛️ [Design Patterns](documentation/DesignPatterns.md)** TODO
+24. **🌀 [Kafka](documentation/Kafka.md)** TODO
+25. **🚢 [Kubernetes (K8s)](documentation/Kubernetes%20(K8s).md)** and how it works with Docker TODO
+26. **🐳 [Docker](documentation/Docker.md)** and how it works with Kubernetes (K8s) TODO
+27. **🐳 [HashCode & Equals](documentation/HashCode%20and%20Equals.md)** 
 
 
 
