@@ -31,6 +31,7 @@
 26. **🐳 [Docker](documentation/Docker.md)** and how it works with Kubernetes (K8s) TODO
 27. **🔑 [HashCode & Equals](documentation/HashCode%20and%20Equals.md)** 
 paas iaas saas
+ETL pipeline
 
 
 
