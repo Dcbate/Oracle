@@ -49,15 +49,15 @@ CMD ["java", "Main"]
 
 🚨 Key Dockerfile Instructions
 
-FROM: This specifies the base image. In this case, we are using the openjdk:17-alpine image, which includes Java 17 on a lightweight Alpine Linux distribution.
+**FROM**: This specifies the base image. In this case, we are using the openjdk:17-alpine image, which includes Java 17 on a lightweight Alpine Linux distribution.
 
-WORKDIR: This sets the working directory inside the container. All following commands will be run inside this directory.
+**WORKDIR**: This sets the working directory inside the container. All following commands will be run inside this directory.
 
-COPY: This copies the content from the current directory on your host machine to the container's /app directory.
+**COPY**: This copies the content from the current directory on your host machine to the container's /app directory.
 
-RUN: This command executes a shell command inside the container. Here, we are compiling the Main.java file.
+**RUN**: This command executes a shell command inside the container. Here, we are compiling the Main.java file.
 
-CMD: This defines the default command that gets executed when the container starts. In this case, it runs the Java program.
+**CMD**: This defines the default command that gets executed when the container starts. In this case, it runs the Java program.
 
 ---
 
