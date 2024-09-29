@@ -90,8 +90,8 @@ Kubernetes includes several features to enhance security:
 
 Here’s a simplified workflow of how Kubernetes is used in practice:
 
-1. **Build a container:** Package your application with its dependencies in a container.
-2. **Push the container:** Upload the container image to a container registry.
+1. **Build a Image:** Package your application with its dependencies in a container.
+2. **Push the image:** Upload the container image to a container registry.
 3. **Write configuration files:** Create YAML configuration files that define how your application should be deployed (such as the number of replicas, resources, and networking).
 4. **Deploy the application:** Use Kubernetes to deploy your application across the cluster.
 5. **Monitor and manage:** Kubernetes takes care of monitoring the application, automatically scaling it, and replacing failed instances.
