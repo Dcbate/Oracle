@@ -61,7 +61,7 @@ CMD: This defines the default command that gets executed when the container star
 1. **Build the Docker Image**: Open a terminal in the directory containing your Dockerfile and Java program, then run the appropriate command to build the image.
 
 ```
-  docker build -t my-java-app .
+docker build -t my-java-app .
 ```
 
 2. **Run the Docker Container**: Once the image is built, you can create and run a container from it. The output should show "Hello, Docker!".
