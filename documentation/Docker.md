@@ -10,7 +10,7 @@ Docker is a platform that packages applications and their dependencies into **co
 
 ## Key Docker Concepts
 
-- **Containers**: Lightweight units that package an application and its dependencies.
+- **Containers**: Lightweight units that package an application and its dependencies -  A Running Image
 - **Images**: Read-only templates used to create containers, built from **Dockerfiles**.
 - **Dockerfile**: A text file containing instructions to build a Docker image.
 
