@@ -1,15 +1,4 @@
-# Docker 🐳: A Beginner's Guide for Java Applications
-
-### **Table of Contents**
-1. [What is Docker?](#what-is-docker)
-2. [Key Docker Concepts](#key-docker-concepts)
-    - [Containers](#containers)
-    - [Images](#images)
-    - [Dockerfile](#dockerfile)
-3. [Dockerfile for Java Application](#dockerfile-for-java-application)
-    - [Line-by-Line Breakdown](#line-by-line-breakdown)
-4. [Using the Dockerfile](#using-the-dockerfile)
-5. [Conclusion](#conclusion)
+# Docker 🐳
 
 ---
 
