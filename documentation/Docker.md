@@ -48,6 +48,7 @@ CMD ["java", "Main"]
 ```
 
 🚨 Key Dockerfile Instructions
+
 FROM: This specifies the base image. In this case, we are using the openjdk:17-alpine image, which includes Java 17 on a lightweight Alpine Linux distribution.
 
 WORKDIR: This sets the working directory inside the container. All following commands will be run inside this directory.
