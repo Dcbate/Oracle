@@ -1,4 +1,4 @@
-# 🚢 Kubernetes (K8s) for Beginners
+# 🚢 Kubernetes (K8s)
 
 Kubernetes, also known as **K8s**, is an open-source platform designed to automate the deployment, scaling, and management of containerized applications. Originally developed by Google, Kubernetes is now maintained by the Cloud Native Computing Foundation (CNCF). It allows you to run applications reliably and at scale while reducing manual tasks.
 
