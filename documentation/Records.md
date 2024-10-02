@@ -16,6 +16,21 @@ Java 17 introduced *Records*, a special kind of class designed to model immutabl
 
 Records are defined using the `record` keyword followed by the name of the record and its components. The components represent the fields of the record, and the fields are immutable by default. Java automatically generates a constructor, `equals()`, `hashCode()`, and `toString()` methods based on the fields.
 
+```java
+public record Person(String name, int age) {}
+```
+
+
+## 🏗️ Instantiating a Record
+
+You can create instances of a record in the same way as a class.
+
+```java
+Person person = new Person("Alice", 30);
+System.out.println(person.name());  // Output: Alice
+System.out.println(person.age());   // Output: 30
+```
+
 ---
 
 ## 🔒 Are Fields Private in Records?
@@ -23,6 +38,10 @@ Records are defined using the `record` keyword followed by the name of the recor
 In a Java Record, fields are **implicitly private and final**. This means they cannot be directly accessed or modified. However, **public accessor methods** are automatically generated for each field, allowing access to the field values.
 
 For example, if a record has fields `name` and `age`, you can retrieve these values using the automatically generated methods but not access them directly as public fields.
+
+```java
+public record Person(String name, int age) {}
+```
 
 ---
 
