@@ -33,6 +33,7 @@
 paas iaas saas
 ETL pipeline
 JVM AND JDK
+composition over inheritence 
 
 
 
