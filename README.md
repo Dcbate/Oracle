@@ -30,6 +30,7 @@
 25. **🚢 [Kubernetes (K8s)](documentation/Kubernetes%20(K8s).md)**
 26. **🐳 [Docker](documentation/Docker.md)**
 27. **🔑 [HashCode & Equals](documentation/HashCode%20and%20Equals.md)** 
+28. **🔑 [Records](documentation/Records.md)** 
 paas iaas saas
 ETL pipeline
 JVM AND JDK
