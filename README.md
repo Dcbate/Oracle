@@ -35,10 +35,12 @@
 30. **⚙️ [JVM and JDK](documentation/JVM%20and%20JDK.md)** // TODO
 31. **🔀 [Composition Over Inheritance](documentation/CompositionOverInheritance.md)** // TODO
 32. **⚓ [Helm](documentation/Helm.md)** // TODO
-33. **🔁 [Streams](documentation/Streams.md)** // TODO
+33. **🔁 [Streams](documentation/Streams.md)**
 34. **🧪 [TDD](documentation/TDD.md)** // TODO
 35. **☕ [Java 17](documentation/Java17.md)**
 36. **🍵 [Java 21](documentation/Java21.md)** 
+37. **💡[Optionals](documentation/Optionals.md)**
+
 
 ## Leetcode 
 
