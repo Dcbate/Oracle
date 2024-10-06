@@ -37,8 +37,8 @@
 32. **⚓ [Helm](documentation/Helm.md)** // TODO
 33. **🔁 [Streams](documentation/Streams.md)** // TODO
 34. **🧪 [TDD](documentation/TDD.md)** // TODO
-35. **☕ [Java 17](documentation/Java17.md)** // TODO
-36. **🍵 [Java 21](documentation/Java21.md)** // TODO
+35. **☕ [Java 17](documentation/Java17.md)**
+36. **🍵 [Java 21](documentation/Java21.md)** 
 
 ## Leetcode 
 
