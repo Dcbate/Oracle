@@ -48,7 +48,7 @@ Example:
 Copy code
 import java.util.ArrayList;
 
-ArrayList<String> fruits = new ArrayList<>();
+List<String> fruits = new ArrayList<>();
 
 // Add elements to ArrayList
 fruits.add("Apple");
