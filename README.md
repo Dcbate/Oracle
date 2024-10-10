@@ -15,7 +15,7 @@
 10. **🍩 [Java Keywords](documentation/Java%20Keywords.md)**
 11. **🖱️ [Java Primitive Types](documentation/Java%20Primitive%20Types.md)**
 12. **🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)**
-13. **🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)** // TODO
+13. **🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)**
 14. **🚨 [Exceptions](documentation/Exceptions.md)** // TODO
 15. **🌿 [Spring Boot](documentation/SpringBoot.md)** // TODO
 16. **🧵 [String Class](documentation/StringClass.md)** // TODO
