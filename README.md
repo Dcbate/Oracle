@@ -54,4 +54,8 @@
 8. [GroupAnagrams](leetcode/groupanagrams/groupAnagrams.md)
 
 
+### Certificates 
+1. AWS Certified Developer 
+2. Java 21 
+
 Keep coding David 🚀
