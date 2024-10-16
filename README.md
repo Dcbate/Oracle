@@ -40,7 +40,7 @@
 35. **☕ [Java 17](documentation/Java17.md)**
 36. **🍵 [Java 21](documentation/Java21.md)** 
 37. **💡[Optionals](documentation/Optionals.md)**
-
+38. predicate consumer supplier and function 
 
 ## Leetcode 
 
