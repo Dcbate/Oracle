@@ -14,7 +14,7 @@ public class ValidPalindrome {
 
 
             for(int i =0;i<length;i++){
-                char left =array[i];
+                char left = array[i];
                 char right = array[array.length-1-i];
                 if(left != right){
                     return false;

@@ -24,6 +24,8 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
+
+        System.out.println(new int[]{1,4,3,4,3,3,3,3}.length);
         System.out.println(majorityElement(new int[]{1,4,3,4,3,3,3,3}));
     }
 }
