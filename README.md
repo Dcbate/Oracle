@@ -9,40 +9,39 @@
 4. **📚 [Java Data Structures](documentation/Java%20Data%20Structures.md)**
 5. **📊 [Big O Notation](documentation/Big%20O%20Notation.md)**
 6. **🧠 [Algorithms](documentation/Algorithms.md)**
-7. **⏳ [Synchronized](documentation/Synchronized.md)** // TODO
+7. **⏳ [Synchronized](documentation/Synchronized.md)** _(TODO)_
 8. **🧵 [Threads](documentation/Threads.md)**
 9. **📈 [Big O of Operations on Java Data Structures](documentation/Big%20O%20of%20Operations%20on%20Java%20Data%20Structures.md)**
 10. **🍩 [Java Keywords](documentation/Java%20Keywords.md)**
 11. **🖱️ [Java Primitive Types](documentation/Java%20Primitive%20Types.md)**
 12. **🏗️ [Heap and Stack](documentation/Heap%20and%20Stack.md)**
 13. **🗑️ [Garbage Collection](documentation/Garbage%20Collection.md)**
-14. **🚨 [Exceptions](documentation/Exceptions.md)** // TODO
-15. **🌿 [Spring Boot](documentation/SpringBoot.md)** // TODO
-16. **🧵 [String Class](documentation/StringClass.md)** // TODO
-17. **🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)** // TODO
-18. **💡 [Lambdas](documentation/Lambdas.md)** // TODO
-19. **🚪 [Sealed Classes](documentation/SealedClasses.md)** // TODO
-20. **📜 [Records](documentation/Records.md)** // TODO
-21. **🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)** // TODO
-22. **💾 [Databases](documentation/Databases.md)** // TODO
-23. **🏛️ [Design Patterns](documentation/DesignPatterns.md)** // TODO
-24. **🌪️ [Kafka](documentation/Kafka.md)** // TODO
+14. **🚨 [Exceptions](documentation/Exceptions.md)** _(TODO)_
+15. **🌿 [Spring Boot](documentation/SpringBoot.md)** _(TODO)_
+16. **🧵 [String Class](documentation/StringClass.md)** _(TODO)_
+17. **🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)** _(TODO)_
+18. **💡 [Lambdas](documentation/Lambdas.md)** _(TODO)_
+19. **🚪 [Sealed Classes](documentation/SealedClasses.md)** _(TODO)_
+20. **📜 [Records](documentation/Records.md)** _(TODO)_
+21. **🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)** _(TODO)_
+22. **💾 [Databases](documentation/Databases.md)** _(TODO)_
+23. **🏛️ [Design Patterns](documentation/DesignPatterns.md)** _(TODO)_
+24. **🌪️ [Kafka](documentation/Kafka.md)** _(TODO)_
 25. **🛳️ [Kubernetes (K8s)](documentation/Kubernetes%20(K8s).md)**
 26. **🐋 [Docker](documentation/Docker.md)**
 27. **🔑 [HashCode & Equals](documentation/HashCode%20and%20Equals.md)**
-28. **📖 [Records](documentation/Records.md)**
-29. **☁️ [PaaS, IaaS, SaaS](documentation/PaaSIaaSSaaS.md)** // TODO
-30. **⚙️ [JVM and JDK](documentation/JVM%20and%20JDK.md)** // TODO
-31. **🔀 [Composition Over Inheritance](documentation/CompositionOverInheritance.md)** // TODO
-32. **⚓ [Helm](documentation/Helm.md)** // TODO
+28. **📜 [Records](documentation/Records.md)**
+29. **☁️ [PaaS, IaaS, SaaS](documentation/PaaSIaaSSaaS.md)** _(TODO)_
+30. **⚙️ [JVM and JDK](documentation/JVM%20and%20JDK.md)** _(TODO)_
+31. **🔀 [Composition Over Inheritance](documentation/CompositionOverInheritance.md)** _(TODO)_
+32. **⚓ [Helm](documentation/Helm.md)** _(TODO)_
 33. **🔁 [Streams](documentation/Streams.md)**
-34. **🧪 [TDD](documentation/TDD.md)** // TODO
+34. **🧪 [TDD](documentation/TDD.md)** _(TODO)_
 35. **☕ [Java 17](documentation/Java17.md)**
-36. **🍵 [Java 21](documentation/Java21.md)** 
-37. **💡[Optionals](documentation/Optionals.md)**
-38. predicate consumer supplier and function 
-39. Time management in Java Durations and instants
-
+36. **🍵 [Java 21](documentation/Java21.md)**
+37. **💡 [Optionals](documentation/Optionals.md)**
+38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)** _(TODO)_
+39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)** _(TODO)_
 
 ## Leetcode 
 
@@ -57,7 +56,7 @@
 
 
 ## Interview Problems
-1. [Circuit Breaker] (interview/circuitbreaker/CircuitBreaker.md)
+1. [Circuit Breaker](interview/circuitbreaker/CircuitBreaker.md)
 
 
 
