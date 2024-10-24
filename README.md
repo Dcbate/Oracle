@@ -22,7 +22,7 @@
 17. **🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)** _(TODO)_
 18. **💡 [Lambdas](documentation/Lambdas.md)** _(TODO)_
 19. **🚪 [Sealed Classes](documentation/SealedClasses.md)** _(TODO)_
-20. **📜 [Records](documentation/Records.md)** _(TODO)_
+20. **📜 [Records](documentation/Records.md)** 
 21. **🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)** _(TODO)_
 22. **💾 [Databases](documentation/Databases.md)** _(TODO)_
 23. **🏛️ [Design Patterns](documentation/DesignPatterns.md)** _(TODO)_
