@@ -34,14 +34,14 @@
 29. **☁️ [PaaS, IaaS, SaaS](documentation/PaaSIaaSSaaS.md)** _(TODO)_
 30. **⚙️ [JVM and JDK](documentation/JVM%20and%20JDK.md)** _(TODO)_
 31. **🔀 [Composition Over Inheritance](documentation/CompositionOverInheritance.md)** _(TODO)_
-32. **⚓ [Helm](documentation/Helm.md)** _(TODO)_
+32. **⚓ [Helm](documentation/Helm.md)** 
 33. **🔁 [Streams](documentation/Streams.md)**
 34. **🧪 [TDD](documentation/TDD.md)** _(TODO)_
 35. **☕ [Java 17](documentation/Java17.md)**
 36. **🍵 [Java 21](documentation/Java21.md)**
 37. **💡 [Optionals](documentation/Optionals.md)**
-38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)** _(TODO)_
-39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)** _(TODO)_
+38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)** 
+39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
 
 ## Leetcode 
 
