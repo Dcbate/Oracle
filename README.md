@@ -41,6 +41,8 @@
 36. **🍵 [Java 21](documentation/Java21.md)** 
 37. **💡[Optionals](documentation/Optionals.md)**
 38. predicate consumer supplier and function 
+39. Time management in Java Durations and instants
+
 
 ## Leetcode 
 
@@ -52,6 +54,11 @@
 6. [Valid Palindrome](leetcode/validpalindrome/ValidPalindrome.md)
 7. [Valid Parentheses](leetcode/validparentheses/ValidParentheses.md)
 8. [GroupAnagrams](leetcode/groupanagrams/groupAnagrams.md)
+
+
+## Interview Problems
+1. [Circuit Breaker] (interview/circuitbreaker/CircuitBreaker.md)
+
 
 
 ### Certificates 
