@@ -22,7 +22,7 @@
 17. **🏷️ [Interfaces and Classes](documentation/InterfacesAndClasses.md)** _(TODO)_
 18. **💡 [Lambdas](documentation/Lambdas.md)** _(TODO)_
 19. **🚪 [Sealed Classes](documentation/SealedClasses.md)** _(TODO)_
-20. **📜 [Records](documentation/Records.md)** 
+20. **📜 [Records](documentation/Records.md)**
 21. **🔄 [Switch/If/For Statements](documentation/SwitchIfForStatements.md)** _(TODO)_
 22. **💾 [Databases](documentation/Databases.md)** _(TODO)_
 23. **🏛️ [Design Patterns](documentation/DesignPatterns.md)** _(TODO)_
@@ -34,15 +34,18 @@
 29. **☁️ [PaaS, IaaS, SaaS](documentation/PaaSIaaSSaaS.md)** _(TODO)_
 30. **⚙️ [JVM and JDK](documentation/JVM%20and%20JDK.md)** _(TODO)_
 31. **🔀 [Composition Over Inheritance](documentation/CompositionOverInheritance.md)** _(TODO)_
-32. **⚓ [Helm](documentation/Helm.md)** 
+32. **⚓ [Helm](documentation/Helm.md)**
 33. **🔁 [Streams](documentation/Streams.md)**
-34. **🧪 [TDD](documentation/TDD.md)** 
+34. **🧪 [TDD](documentation/TDD.md)**
 35. **☕ [Java 17](documentation/Java17.md)**
 36. **🍵 [Java 21](documentation/Java21.md)**
 37. **💡 [Optionals](documentation/Optionals.md)**
-38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)** 
+38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)**
 39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
-40. Java Theory Questions
+40. **📝 [Java Theory Questions](documentation/JavaTheoryCheatSheet.md)** 
+41. **📜 [JPA Cheat Sheet](documentation/JPACheatSheet.md)** 
+
+
 
 ## Leetcode 
 
