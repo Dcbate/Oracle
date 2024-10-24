@@ -42,6 +42,7 @@
 37. **💡 [Optionals](documentation/Optionals.md)**
 38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)** 
 39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
+40. Java Theory Questions
 
 ## Leetcode 
 
