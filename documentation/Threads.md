@@ -204,6 +204,4 @@ public class Main {
 
 Java threads are a powerful tool for creating concurrent applications, but they come with complexities like synchronization and potential pitfalls. Using higher-level abstractions from the `java.util.concurrent` package can simplify thread management and reduce errors.
 
-Happy coding! 🚀👨‍💻
-
 ---
