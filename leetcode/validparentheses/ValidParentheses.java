@@ -5,7 +5,7 @@ import java.util.Stack;
 public class ValidParentheses {
      public boolean isValid(String s) {
 
-            Stack<Character> stack = new Stack<Character>(); // create an empty stack
+            Stack<Character> stack = new Stack<>(); // create an empty stack
 
             for (char c : s.toCharArray()) { // loop through each character in the string
                 if (c == '(') // if the character is an opening parenthesis
@@ -23,5 +23,6 @@ public class ValidParentheses {
             // so the string is valid, otherwise, there are unmatched opening brackets, so return false
             return stack.isEmpty();
         }
+
 
 }

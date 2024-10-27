@@ -317,6 +317,4 @@ We have not mentioned testing in any of these principles, but it you follow them
 
 
 ## 🏁 Conclusion
-In this course, we have covered the five principles of object-oriented design. These guidelines help create maintainable, flexible software systems. While we may have different ideas on coding practices, the SOLID principles provide a strong foundation for object-oriented programming (OOP) and will continue to do so in the future.~~
-
-Happy coding! 🚀
+In this course, we have covered the five principles of object-oriented design. These guidelines help create maintainable, flexible software systems. While we may have different ideas on coding practices, the SOLID principles provide a strong foundation for object-oriented programming (OOP) and will continue to do so in the future.
