@@ -44,7 +44,7 @@
 39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
 40. **📝 [Java Theory Questions](documentation/JavaTheoryCheatSheet.md)** 
 41. **📜 [JPA Cheat Sheet](documentation/JPACheatSheet.md)** 
-42. **↔️ [Comparator and Comparable in java]
+42. **↔️ [Comparator and Comparable in java] (documentation/comparrasioninjava.md)** 
 
 
 ## Leetcode 
