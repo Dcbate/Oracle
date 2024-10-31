@@ -43,9 +43,13 @@
 38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)**
 39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
 40. **📝 [Java Theory Questions](documentation/JavaTheoryCheatSheet.md)** 
-41. **📜 [JPA Cheat Sheet](documentation/JPACheatSheet.md)** 
-42. **↔️ [Comparator and Comparable in java] (documentation/comparrasioninjava.md)** 
+41. **↔️ [Comparator and Comparable in java](documentation/comparatorInJava.md)** 
 
+
+
+### CheatSheets
+1. **📜 [JPA Cheat Sheet](cheatSheets/JPACheatSheet.md)**
+2. **💡 [If/Else alternatives](cheatSheets/IfElseReplacments.md)**
 
 ## Leetcode 
 
