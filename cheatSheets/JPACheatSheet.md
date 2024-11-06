@@ -166,20 +166,6 @@ Spring Data JPA allows you to create queries using method names based on the ent
 
 ## 9. **Date and Time Queries**
 
-- **`findByCreatedDateAfter(LocalDate date)`**
-    - **Description:** Retrieves entities that were created after the specified date.
-    - **Generated SQL:**
-      ```sql
-      SELECT * FROM entity_table WHERE created_date > 'provided_date';
-      ```
-
-- **`findByCreatedDateBefore(LocalDate date)`**
-    - **Description:** Retrieves entities that were created before the specified date.
-    - **Generated SQL:**
-      ```sql
-      SELECT * FROM entity_table WHERE created_date < 'provided_date';
-      ```
-## 1. Basic Date Queries
 
 ### `findByCreatedDateAfter(LocalDate date)`
 - **Description:** Retrieves entities that were created after the specified date.
@@ -195,20 +181,12 @@ Spring Data JPA allows you to create queries using method names based on the ent
   SELECT * FROM entity_table WHERE created_date < 'provided_date';
   ```
 
-## 2. Additional Date and Time Queries
 
 ### `findByCreatedDateBetween(LocalDate startDate, LocalDate endDate)`
 - **Description:** Retrieves entities that were created between the specified start and end dates (inclusive).
 - **Generated SQL:**
   ```sql
   SELECT * FROM entity_table WHERE created_date BETWEEN 'start_date' AND 'end_date';
-  ```
-
-### `findByCreatedDate(LocalDate date)`
-- **Description:** Retrieves entities that were created on the specified date.
-- **Generated SQL:**
-  ```sql
-  SELECT * FROM entity_table WHERE created_date = 'provided_date';
   ```
 
 ### `findByCreatedDateIn(Collection<LocalDate> dates)`
@@ -223,13 +201,6 @@ Spring Data JPA allows you to create queries using method names based on the ent
 - **Generated SQL:**
   ```sql
   SELECT * FROM entity_table WHERE created_date > 'start_date' AND created_date < 'end_date';
-  ```
-
-### `findByCreatedDateIsNull()`
-- **Description:** Retrieves entities where the created date is not set (null).
-- **Generated SQL:**
-  ```sql
-  SELECT * FROM entity_table WHERE created_date IS NULL;
   ```
 
 ### `findByCreatedDateYear(int year)`
