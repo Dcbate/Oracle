@@ -179,5 +179,79 @@ Spring Data JPA allows you to create queries using method names based on the ent
       ```sql
       SELECT * FROM entity_table WHERE created_date < 'provided_date';
       ```
+## 1. Basic Date Queries
 
+### `findByCreatedDateAfter(LocalDate date)`
+- **Description:** Retrieves entities that were created after the specified date.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date > 'provided_date';
+  ```
+
+### `findByCreatedDateBefore(LocalDate date)`
+- **Description:** Retrieves entities that were created before the specified date.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date < 'provided_date';
+  ```
+
+## 2. Additional Date and Time Queries
+
+### `findByCreatedDateBetween(LocalDate startDate, LocalDate endDate)`
+- **Description:** Retrieves entities that were created between the specified start and end dates (inclusive).
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date BETWEEN 'start_date' AND 'end_date';
+  ```
+
+### `findByCreatedDate(LocalDate date)`
+- **Description:** Retrieves entities that were created on the specified date.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date = 'provided_date';
+  ```
+
+### `findByCreatedDateIn(Collection<LocalDate> dates)`
+- **Description:** Retrieves entities that were created on any of the specified dates in the provided collection.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date IN ('date1', 'date2', 'date3', ...);
+  ```
+
+### `findByCreatedDateAfterAndCreatedDateBefore(LocalDate startDate, LocalDate endDate)`
+- **Description:** Retrieves entities that were created after a specified start date and before an end date, excluding the boundary dates.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date > 'start_date' AND created_date < 'end_date';
+  ```
+
+### `findByCreatedDateIsNull()`
+- **Description:** Retrieves entities where the created date is not set (null).
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE created_date IS NULL;
+  ```
+
+### `findByCreatedDateYear(int year)`
+- **Description:** Retrieves entities that were created in the specified year. This requires database support for extracting year data.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE EXTRACT(YEAR FROM created_date) = 'provided_year';
+  ```
+
+### `findByCreatedDateMonth(int month)`
+- **Description:** Retrieves entities that were created in the specified month (any year). Requires database support for extracting month data.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE EXTRACT(MONTH FROM created_date) = 'provided_month';
+  ```
+
+### `findByCreatedDateDayOfWeek(int dayOfWeek)`
+- **Description:** Retrieves entities that were created on a specified day of the week (e.g., Monday). Requires database support for extracting day of the week.
+- **Generated SQL:**
+  ```sql
+  SELECT * FROM entity_table WHERE EXTRACT(DOW FROM created_date) = 'provided_day_of_week';
+  ```
+
+---
 ---
