@@ -47,6 +47,8 @@
 42. **🚪 [Reactive Code](documentation/reactivecode.md)** 
 43. 42. **🚪 [Transactions in DB](documentation/transactions.md)**
 44. Queues and Topics 
+45. POST and PUT and http verbs 
+46. Recursion code 
 
 
 
@@ -54,6 +56,8 @@
 ### CheatSheets
 1. **📜 [JPA Cheat Sheet](cheatSheets/JPACheatSheet.md)**
 2. **💡 [If/Else alternatives](cheatSheets/IfElseReplacments.md)**
+3. **💡 [Cache](cheatSheets/caches.md)**
+
 
 ## Leetcode 
 
