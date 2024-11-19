@@ -57,7 +57,7 @@
 1. **📜 [JPA Cheat Sheet](cheatSheets/JPACheatSheet.md)**
 2. **💡 [If/Else alternatives](cheatSheets/IfElseReplacments.md)**
 3. **📍[Cache](cheatSheets/caches.md)**
-4. **📶[Jackson](cheatSheets/Jackson.md)**
+4. **📶 [Jackson](cheatSheets/Jackson.md)**
 
 
 ## Leetcode 
