@@ -47,7 +47,7 @@
 42. **🚪 [Reactive Code](documentation/reactivecode.md)**
 43. **🗄️ [Transactions in DB](documentation/transactions.md)**
 44. **🌀 [Queues and Topics](documentation/QueuesAndTopics.md)** _(TODO)_
-45. **📮 [HTTP Verbs](documentation/HTTP Verbs.md)** _(TODO)_
+45. **📮 [HTTP Verbs](documentation/HTTP Verbs.md)** 
 46. **🔁 [Recursion Code](documentation/RecursionCode.md)** _(TODO)_
 
 
