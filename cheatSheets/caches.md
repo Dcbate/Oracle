@@ -1,5 +1,5 @@
 
-# Cheat Sheet: Adding Caches in Java Spring with Caffeine and API to Clear It 🚀
+# Cheat Sheet: Adding Caches in Java Spring with Caffeine🚀
 
 ---
 
