@@ -42,15 +42,13 @@
 37. **💡 [Optionals](documentation/Optionals.md)**
 38. **🔢 [Predicate, Consumer, Supplier, and Function](documentation/FunctionalInterfaces.md)**
 39. **⏱️ [Time Management in Java (Durations and Instants)](documentation/TimeManagementInJava.md)**
-40. **📝 [Java Theory Questions](documentation/JavaTheoryCheatSheet.md)** 
-41. **↔️ [Comparator and Comparable in java](documentation/comparatorInJava.md)** 
-42. **🚪 [Reactive Code](documentation/reactivecode.md)** 
-43. 42. **🚪 [Transactions in DB](documentation/transactions.md)**
-44. Queues and Topics 
-45. POST and PUT and http verbs 
-46. Recursion code 
-
-
+40. **📝 [Java Theory Questions](documentation/JavaTheoryCheatSheet.md)**
+41. **↔️ [Comparator and Comparable in Java](documentation/comparatorInJava.md)**
+42. **🚪 [Reactive Code](documentation/reactivecode.md)**
+43. **🗄️ [Transactions in DB](documentation/transactions.md)**
+44. **🌀 [Queues and Topics](documentation/QueuesAndTopics.md)** _(TODO)_
+45. **📮 [POST, PUT, and HTTP Verbs](documentation/HttpVerbs.md)** _(TODO)_
+46. **🔁 [Recursion Code](documentation/RecursionCode.md)** _(TODO)_
 
 
 ### CheatSheets
