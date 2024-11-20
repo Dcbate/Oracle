@@ -1,4 +1,5 @@
- Understanding Custom Annotations in Java (with Spring Examples)
+
+# Understanding Custom Annotations in Java (with Spring Examples)
 
 ## What are Custom Annotations?
 
@@ -22,214 +23,238 @@ Custom annotations are:
 
 ---
 
-## When to Use Custom Annotations
+## Example 1: Sending Method Results to a Pub/Sub Queue
 
-- **Code Reusability**: Standardize and encapsulate common patterns (e.g., logging, validation).
-- **Cross-Cutting Concerns**: Handle concerns like security, auditing, or transactions using annotations with Spring AOP.
-- **Configuration**: Provide metadata to configure services or components dynamically.
-- **Validation**: Simplify validation logic for objects.
+### Use Case
 
----
+You want to:
+1. Annotate methods whose results should be published to a Pub/Sub queue.
+2. Automatically send the method result to a queue after the method finishes execution.
 
-## Creating a Custom Annotation
+### Implementation
 
-### 1. Define the Annotation
+**Define the Annotation:**
 
 ```java
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-// This annotation can only be applied to methods
 @Target(ElementType.METHOD)
-// Retention policy ensures the annotation is available at runtime
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LogExecutionTime {
+public @interface PublishToQueue {
+    String queueName(); // Specify the queue name
 }
 ```
 
-- **`@Target`**: Restricts the annotation to methods (`ElementType.METHOD`).
-- **`@Retention`**: Keeps the annotation metadata available at runtime.
-
----
-
-### 2. Process the Annotation
-
-You can process the annotation using:
-- **Reflection**: Manually inspect and act on the annotation.
-- **Spring AOP**: Automate behavior for annotated components.
-
-#### Using Spring AOP:
-
-1. Add the annotation to a method:
+**Process with Spring AOP:**
 
 ```java
-@Service
-public class MyService {
-
-    @LogExecutionTime
-    public void performTask() {
-        // Simulate a task
-        System.out.println("Task is being performed...");
-    }
-}
-```
-
-2. Create an AOP Aspect to Handle the Annotation:
-
-```java
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Component;
-
 @Aspect
 @Component
-public class LogExecutionTimeAspect {
+public class PublishToQueueAspect {
 
-    @Around("@annotation(LogExecutionTime)")
-    public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
-        long start = System.currentTimeMillis();
-        Object result = joinPoint.proceed(); // Proceed with the method execution
-        long end = System.currentTimeMillis();
+    @Autowired
+    private PubSubService pubSubService;
 
-        System.out.println("Execution time: " + (end - start) + "ms");
+    @Around("@annotation(publishToQueue)")
+    public Object handlePublishToQueue(ProceedingJoinPoint joinPoint, PublishToQueue publishToQueue) throws Throwable {
+        Object result = joinPoint.proceed(); // Proceed with the method
+        pubSubService.publish(publishToQueue.queueName(), result); // Publish result
         return result;
     }
 }
 ```
 
-3. Enable AspectJ in Spring:
+**Use the Annotation:**
 
 ```java
-@Configuration
-@EnableAspectJAutoProxy
-public class AppConfig {
+@Service
+public class OrderService {
+
+    @PublishToQueue(queueName = "order-updates")
+    public String createOrder(String orderDetails) {
+        return "Order created: " + orderDetails;
+    }
 }
 ```
 
 ---
 
-## Example Workflow
+## Example 2: Automatic Validation for Method Parameters
 
-1. The `@LogExecutionTime` annotation is added to a method.
-2. When the method is called, the AOP `@Aspect` intercepts the call.
-3. The logic inside `LogExecutionTimeAspect` is executed, logging the execution time.
+### Use Case
 
----
+You want to:
+1. Annotate methods to validate their parameters automatically.
+2. Avoid repetitive validation logic.
 
-## Advanced Custom Annotations
+### Implementation
 
-### Adding Parameters to Annotations
-
-Annotations can have parameters for flexibility:
+**Define the Annotation:**
 
 ```java
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-@Target(ElementType.METHOD)
+@Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Retry {
-    int attempts() default 3; // Default value
-    long delay() default 1000; // Delay in milliseconds
+public @interface NotNull {
+    String message() default "Parameter cannot be null";
 }
 ```
 
-#### Example Usage:
-
-```java
-@Retry(attempts = 5, delay = 2000)
-public void connectToService() {
-    // Retry logic
-}
-```
-
-### Processing Parameters in the AOP Aspect
+**Process with Spring AOP:**
 
 ```java
 @Aspect
 @Component
-public class RetryAspect {
+public class NotNullAspect {
 
-    @Around("@annotation(retry)")
-    public Object retryLogic(ProceedingJoinPoint joinPoint, Retry retry) throws Throwable {
-        int attempts = retry.attempts();
-        long delay = retry.delay();
-
-        for (int i = 0; i < attempts; i++) {
-            try {
-                return joinPoint.proceed();
-            } catch (Exception e) {
-                if (i == attempts - 1) throw e;
-                Thread.sleep(delay);
-            }
+    @Around("execution(* *(.., @NotNull (*), ..)) && args(.., param, ..)")
+    public Object validateNotNull(ProceedingJoinPoint joinPoint, Object param) throws Throwable {
+        if (param == null) {
+            throw new IllegalArgumentException("Parameter cannot be null");
         }
-        return null;
+        return joinPoint.proceed(); // Proceed with the method
     }
 }
 ```
+
+**Use the Annotation:**
+
+```java
+@Service
+public class UserService {
+
+    public void registerUser(@NotNull String username) {
+        System.out.println("User registered: " + username);
+    }
+}
+```
+
+---
+
+## Example 3: Role-Based Access Control (RBAC)
+
+### Use Case
+
+You want to:
+1. Annotate methods with specific roles that are allowed to execute them.
+2. Enforce security rules dynamically at runtime.
+
+### Implementation
+
+**Define the Annotation:**
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Secured {
+    String[] roles();
+}
+```
+
+**Process with Spring AOP:**
+
+```java
+@Aspect
+@Component
+public class SecurityAspect {
+
+    @Around("@annotation(secured)")
+    public Object checkSecurity(ProceedingJoinPoint joinPoint, Secured secured) throws Throwable {
+        // Simulate a security context
+        String currentUserRole = "USER";
+
+        for (String role : secured.roles()) {
+            if (role.equals(currentUserRole)) {
+                return joinPoint.proceed(); // User has access
+            }
+        }
+
+        throw new SecurityException("Access denied for role: " + currentUserRole);
+    }
+}
+```
+
+**Use the Annotation:**
+
+```java
+@Service
+public class AdminService {
+
+    @Secured(roles = {"ADMIN"})
+    public void deleteAccount(String accountId) {
+        System.out.println("Account deleted: " + accountId);
+    }
+}
+```
+
+---
+
+## Additional Use Cases
+
+### 1. **Custom Caching**
+Annotate methods to cache their results dynamically.
+
+**Example:**
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CacheResult {
+    String cacheName();
+}
+```
+
+**Use Case:** Automatically store and retrieve results from a cache for performance optimization.
+
+---
+
+### 2. **Auditing**
+Log method invocations for auditing purposes.
+
+**Example:**
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Audit {
+    String action();
+}
+```
+
+**Use Case:** Capture method execution details for compliance or debugging.
+
+---
+
+### 3. **Retry Logic**
+Retry failed methods with configurable attempts.
+
+**Example:**
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Retry {
+    int attempts() default 3;
+    long delay() default 1000; // Delay in milliseconds
+}
+```
+
+**Use Case:** Automatically retry transient failures like network calls.
+
+---
+
+### 4. **Metrics Collection**
+Track execution time or method calls for monitoring.
+
+**Example:**
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Metric {
+    String name();
+}
+```
+
+**Use Case:** Collect performance metrics for application monitoring.
 
 ---
 
 ## Common Pitfalls
 
-1. **Incorrect Retention Policy**: Ensure you use `RetentionPolicy.RUNTIME` if you want to process annotations at runtime.
-2. **Misconfigured AOP**: Forgetting to enable `@EnableAspectJAutoProxy` can result in your aspect not working.
-3. **Reflection Overhead**: Overusing annotations with reflection can impact performance.
-
----
-
-## Summary
-
-- Custom annotations encapsulate reusable logic and reduce boilerplate code.
-- Using Spring AOP, you can create powerful features like logging, retry mechanisms, and security.
-- Always choose meaningful names and use parameters to make your annotations flexible.
-
----
-
-### Full Example
-
-**Custom Annotation:**
-
-```java
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface LogExecutionTime {
-}
-```
-
-**Service:**
-
-```java
-@Service
-public class MyService {
-
-    @LogExecutionTime
-    public void performTask() {
-        System.out.println("Task is being performed...");
-    }
-}
-```
-
-**Aspect:**
-
-```java
-@Aspect
-@Component
-public class LogExecutionTimeAspect {
-
-    @Around("@annotation(LogExecutionTime)")
-    public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
-        long start = System.currentTimeMillis();
-        Object result = joinPoint.proceed();
-        long end = System.currentTimeMillis();
-
-        System.out.println("Execution time: " + (end - start) + "ms");
-        return result;
-    }
-}
-```
+1. **Reflection Overhead**: Overuse of annotations with reflection may impact performance.
+2. **Incorrect Retention Policy**: Use `RetentionPolicy.RUNTIME` for runtime processing.
+3. **Complex Logic in Aspects**: Keep annotation-related logic lightweight to maintain readability 
