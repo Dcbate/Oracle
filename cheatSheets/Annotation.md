@@ -1,5 +1,5 @@
 
-# Understanding Custom Annotations in Java (with Spring Examples)
+# Custom Annotations 
 
 ## What are Custom Annotations?
 
