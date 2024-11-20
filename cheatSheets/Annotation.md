@@ -77,58 +77,7 @@ public class OrderService {
 
 ---
 
-## Example 2: Automatic Validation for Method Parameters
-
-### Use Case
-
-You want to:
-1. Annotate methods to validate their parameters automatically.
-2. Avoid repetitive validation logic.
-
-### Implementation
-
-**Define the Annotation:**
-
-```java
-@Target(ElementType.PARAMETER)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface NotNull {
-    String message() default "Parameter cannot be null";
-}
-```
-
-**Process with Spring AOP:**
-
-```java
-@Aspect
-@Component
-public class NotNullAspect {
-
-    @Around("execution(* *(.., @NotNull (*), ..)) && args(.., param, ..)")
-    public Object validateNotNull(ProceedingJoinPoint joinPoint, Object param) throws Throwable {
-        if (param == null) {
-            throw new IllegalArgumentException("Parameter cannot be null");
-        }
-        return joinPoint.proceed(); // Proceed with the method
-    }
-}
-```
-
-**Use the Annotation:**
-
-```java
-@Service
-public class UserService {
-
-    public void registerUser(@NotNull String username) {
-        System.out.println("User registered: " + username);
-    }
-}
-```
-
----
-
-## Example 3: Role-Based Access Control (RBAC)
+## Example 2: Role-Based Access Control (RBAC)
 
 ### Use Case
 
