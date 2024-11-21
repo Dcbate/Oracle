@@ -50,6 +50,7 @@
 - Talk about how i found an issue , took ownership of issue and solved each by taking ownership all the way from design to production and solving the problem 
 - Still used now 5 years later and proud of solution, code, teamwork, documentation, presentation
 - Things learnt - Be more sure in your thoughts , i let people overtake later in the process and dictate designs which are wrong 
+- brought in cache for first time , brought in reactive code for first time, brought in the template on how a service should be delivered 
 
 
 #### **Challenge**:
