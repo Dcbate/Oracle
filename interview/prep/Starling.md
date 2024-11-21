@@ -46,6 +46,12 @@
 ---
 
 ### **3. New Service: Composite API with Hazelcast Cache and Reactive Programming** 🧩
+
+- Talk about how i found an issue , took ownership of issue and solved each by taking ownership all the way from design to production and solving the problem 
+- Still used now 5 years later and proud of solution, code, teamwork, documentation, presentation
+- Things learnt - Be more sure in your thoughts , i let people overtake later in the process and dictate designs which are wrong 
+
+
 #### **Challenge**:
 - Build a composite API service to collect large volumes of data, process it into a cache, and serve transformed results efficiently.
 
