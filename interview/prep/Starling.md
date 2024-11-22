@@ -5,6 +5,12 @@
 ---
 
 
+## USE STAR
+- Situation - the situation you had to deal with
+- Task - the task you were given to do
+- Action - the action you took
+- Result - what happened as a result of your action and what you learned from the experience
+
 ## Key Projects to Highlight
 
 ### **1. Migration to GCP** 🚀
