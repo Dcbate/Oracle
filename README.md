@@ -50,7 +50,7 @@
 45. **📮 [HTTP Verbs](documentation/HTTP%20Verbs.md)** 
 46. **🔁 [Recursion Code](documentation/RecursionCode.md)** _(TODO)_
 47. Authentcation vs authorisation 
-promary vs forign keys 
+primary vs forign keys 
 one to one one to msny ans many to many 
 
 
